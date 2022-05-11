@@ -1,0 +1,84 @@
+.account-conatiner{
+display: flex;
+margin-left: 180px;
+
+}
+.account-head{
+    width: 50vw;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.account-head-txt{
+    font-family: 'Josefin Sans', sans-serif;
+    color:   #FA8072;
+    font-size: 26px;
+    font-weight: 700;
+    
+}
+.delete-account{
+    margin-right: 60px;
+}
+.delete-account:hover{
+    cursor: pointer;
+    text-decoration: line-through;
+}
+.update-account{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 30px;
+
+}
+.update-profile-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+.profile-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.update-icon{
+    font-size: 40px;
+    color: #FA8072	;
+    cursor: pointer;
+}
+
+.account-data{
+    display: flex;
+    flex-direction: column;
+    max-width:1000px ;
+    
+}
+.input-data{
+    margin-bottom: 50px;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.input-data:focus{
+    border:none;
+}
+
+.update-btn{
+    border:none;
+    border-radius: 10px;
+    background-color: #FA8072;
+    padding: 30px 10px;
+    margin: 80px 200px;
+    max-width: 300px;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
