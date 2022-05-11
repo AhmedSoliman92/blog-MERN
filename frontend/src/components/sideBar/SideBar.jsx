@@ -24,6 +24,8 @@ export default function SideBar() {
             <li className="category-item">Music</li>
             <li className="category-item">Sport</li>
             <li className="category-item">Cinema</li>
+            <li className="category-item">Education</li>
+            <li className="category-item">Faction</li>
           </ul>
         </div>
       </div>

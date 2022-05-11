@@ -4,6 +4,10 @@
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
 }
 
 .left-bar,.right-bar{
