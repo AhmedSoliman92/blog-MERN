@@ -1,0 +1,33 @@
+.header{
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.header-title{
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.main-header{
+
+font-size: 150px;
+position: absolute;
+top: 17%;
+color: black;
+
+}
+.secondary-header{
+    font-size: 25px;
+    position: absolute;
+    top: 16%;
+    color: #777;
+}
+.img-header{
+    width: 100%;
+    height: 450;
+    margin-top: 140px;
+    object-fit: cover;
+}

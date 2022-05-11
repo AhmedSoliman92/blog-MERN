@@ -1,7 +1,12 @@
-import React from 'react'
-
+import './header.css'
 export default function Header() {
   return (
-    <div>Header</div>
+    <div className='header'>
+        <div className="header-title">
+            <span className="main-header">Blog</span>
+            <span className="secondary-header">Developer Blog</span>
+        </div>
+        <img src="/assets/images/header blog.jpg" alt="" className="img-header" />
+    </div>
   )
 }
