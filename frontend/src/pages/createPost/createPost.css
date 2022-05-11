@@ -1,0 +1,89 @@
+.create-post-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top:100px;
+
+
+
+}
+
+.uploaded-img{
+    width: 70vw;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+.post-from{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.top-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    
+
+}
+.file-icon{
+    border: 3px solid #999;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #999;
+    margin-right: 10px;
+
+    margin-top: 10px;
+}
+.file-icon:hover{
+    color: #333;
+    border: 3px solid #333;
+}
+.post-title{
+
+    margin-left: 10px;
+    border: none;
+    height: 40px;
+    width: 600px;
+    font-size: 22px;
+    
+}
+.desc-post{
+    border: none;
+    width: 800px;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    resize: none;
+}
+
+.submit-btn{
+    border: none;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    background-color: #00a877;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    
+}
+
+.submit-btn:hover{
+    background-color: #3cd070;
+}
