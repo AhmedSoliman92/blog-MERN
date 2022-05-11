@@ -1,4 +1,4 @@
-.home{
+.body{
+    flex: 9;
     display: flex;
-
 }

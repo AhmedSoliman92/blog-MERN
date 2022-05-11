@@ -3,6 +3,7 @@
     height: 50px;
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
+    flex-wrap: wrap;
 }
 
 .left-bar,.right-bar{
@@ -24,6 +25,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
 }
 
 .top-list{
