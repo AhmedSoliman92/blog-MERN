@@ -21,6 +21,21 @@ const CreatePost = () => {
                 
                 <input type="text" className="post-title" placeholder="Title..." autoFocus={true} />
                 </div>
+                <div className="checkbox-container">
+                <lable className="chekbox">
+                    <input type="checkbox" className="checkbox-icon" />
+                    sdfdaff
+                </lable>
+                <lable className="chekbox">
+                    <input type="checkbox" className="checkbox-icon" />
+                    sdfdaff
+                </lable>
+                <lable className="chekbox">
+                    <input type="checkbox" className="checkbox-icon" />
+                    sdfdaff
+                </lable>
+               
+                </div>
                 <textarea name="" id="" cols="30" rows="15" className="desc-post" placeholder="Write your description..." ></textarea>
                 
             </form>
