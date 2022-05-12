@@ -22,17 +22,18 @@ const CreatePost = () => {
                 <input type="text" className="post-title" placeholder="Title..." autoFocus={true} />
                 </div>
                 <div className="checkbox-container">
+                
                 <lable className="chekbox">
                     <input type="checkbox" className="checkbox-icon" />
-                    sdfdaff
+                    Life
                 </lable>
                 <lable className="chekbox">
                     <input type="checkbox" className="checkbox-icon" />
-                    sdfdaff
+                    Fashion
                 </lable>
                 <lable className="chekbox">
                     <input type="checkbox" className="checkbox-icon" />
-                    sdfdaff
+                    Sport
                 </lable>
                
                 </div>
