@@ -1,0 +1,61 @@
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: cover;
+    background-image: url('../../../public/assets/images/login.jpg');
+    overflow:hidden;
+}
+.login-form{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 150px;
+}
+.h1-login{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+.login-input{
+    border: none;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 3px solid #999;
+}
+.login-input:focus{
+    outline: none;
+}
+
+.btn{
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background: transparent;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #FA8072;
+    padding: 20px 40px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.btn:hover{
+    opacity: 1;
+}
+
+.register{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    opacity: 1;
+}
