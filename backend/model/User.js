@@ -21,11 +21,14 @@ const userSchema = Schema({
         required: true,
         min: 6,
         max: 20,
-        unique:true
     },
     profileImg:{
         type:String,
         default:""
+    },
+    isAdmin:{
+        type:Boolean,
+        default:false
     }
 },{timestamps: true});
 
