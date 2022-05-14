@@ -21,7 +21,7 @@ const handleCreateBlog = async(e)=>{
     const myFileName = fileName.replaceAll(/\s/g,'')
     form.append("name",myFileName);
     form.append("file",files[0])
-        console.log(category)
+
     const newBlog = {
         username:user.username,
         title:title.current.value,

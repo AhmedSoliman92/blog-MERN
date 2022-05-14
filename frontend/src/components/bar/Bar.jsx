@@ -1,10 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../../contextAPI/Context';
 import './bar.css'
 
 export default function Bar() {
     const {user} = useContext(Context);
+    const pth= process.env.REACT_APP_PUBLIC_FOLDER
+    const [search, setSearch]= useState()
+
     const handleLogout =()=>{
         localStorage.removeItem('user');
         window.location.replace('/login')
@@ -41,9 +44,10 @@ export default function Bar() {
             </ul>
         </div>
         <div className="right-bar">
-        {user?<img className='bar-img' src="/assets/images/ahmed.jpeg" alt="" />:''}
+            {user?<Link to='update'>
+            <img className='bar-img' src={user.profileImg?pth+user.profileImg:`${pth}unknown.jpg`} alt="" />
+            </Link>:''}
             <i className="search fa-solid fa-magnifying-glass"></i>
-
         </div>
     </div>
   )

@@ -52,11 +52,11 @@ router.post('/login',async(req,res)=>{
 //delete a new user
 router.delete('/:id',async(req,res)=>{
     try {
-        const currentUser =await User.findById(req.params.id); 
-        if(req.params.id === req.body._id || currentUser.isAdmin){
-            const user = await User.findOne({_id:req.body._id})
-            
-            if(!user) return res.status(400).json("No user matched your request");
+
+        if(req.params.id){
+            const user = await User.findById(req.params.id)
+            console.log(user)
+            if(!user) return res.sendStatus(400);
             await User.findOneAndDelete({_id:user._id});
             res.status(204).json("user have been deleted")
         }else{
@@ -70,6 +70,7 @@ router.delete('/:id',async(req,res)=>{
 //update a new user
 router.put('/:id',async(req,res)=>{
     try {
+        
         const user = await User.findById(req.params.id);
         if(user){
 
@@ -80,9 +81,11 @@ router.put('/:id',async(req,res)=>{
             const updatedUser = await User.updateOne({_id:user._id},{
                 $set: req.body
             });
-            res.status(200).json("Your information has been updated");
+            const newUser = await User.findById(req.params.id);
+            res.status(200).json(newUser);
         }
     } catch (err) {
+        console.log(err)
         res.status(400).json(err)
     }
 })
