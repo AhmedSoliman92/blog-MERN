@@ -15,19 +15,19 @@
 
 font-size: 150px;
 position: absolute;
-top: 17%;
+top: 15%;
 color: black;
 
 }
 .secondary-header{
     font-size: 25px;
     position: absolute;
-    top: 16%;
+    top: 14%;
     color: #777;
 }
 .img-header{
     width: 100%;
-    height: 550px;
+    height: 800px;
     margin-top: 140px;
     object-fit:cover;
 }

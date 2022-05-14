@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Blog = require('../model/Blog')
-
 //create a new blog
 router.post('/create',async(req,res)=>{
     try {
@@ -26,9 +25,9 @@ router.get('/',async(req,res)=>{
 // get a blog by category
 router.get('/cat',async(req,res)=>{
     try {
-        const blogs = await Blog.find({category:{$in:req.body.category}});
+        const blogs = await Blog.find({category:{$in:[req.query.cat]}});
+        console.log(blogs)
         res.status(201).json(blogs);
-
     } catch (err) {
         console.log(err)
         res.status(400).json(err)

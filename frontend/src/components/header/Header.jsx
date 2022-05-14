@@ -6,7 +6,7 @@ export default function Header() {
             <span className="main-header">Blog</span>
             <span className="secondary-header">Developer Blog</span>
         </div>
-        <img src="/assets/images/header blog.jpg" alt="" className="img-header" />
+        <img src="/assets/images/headerblog.jpg" alt="" className="img-header" />
     </div>
   )
 }

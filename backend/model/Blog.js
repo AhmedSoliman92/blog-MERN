@@ -16,7 +16,6 @@ const blogSchema = new Schema({
     desc:{
         type:String,
         required: true,
-        min:200,
     },
     category:{
         type:[],

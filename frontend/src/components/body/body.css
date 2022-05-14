@@ -24,7 +24,7 @@ padding: 0;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 10px auto;
+    margin: 30px auto;
     width: 607px;
     
 
@@ -67,5 +67,6 @@ padding: 0;
     -webkit-line-orient: vertical;
     font-family: 'Varela Round', sans-serif;
     font-weight: 300;
+    text-align: center;
     
 }

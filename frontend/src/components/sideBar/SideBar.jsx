@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './sideBar.css';
 
 export default function SideBar() {
@@ -18,14 +19,39 @@ export default function SideBar() {
         <hr className="hr-side-bar" />
         <div className="item-content">
           <ul className="category-list">
-            <li className="category-item">Life</li>
-            <li className="category-item">Style</li>
-            <li className="category-item">Tech</li>
-            <li className="category-item">Music</li>
-            <li className="category-item">Sport</li>
-            <li className="category-item">Cinema</li>
-            <li className="category-item">Education</li>
-            <li className="category-item">Faction</li>
+            <Link className='cat-link category-item' to='/?cat=Life'>
+              <li className="category-item">Life</li>
+            </Link>
+
+            <Link className='cat-link category-item' to='/?cat=Style'>
+              <li className="category-item">Style</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Tech'>
+              <li className="category-item">Tech</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Music'>
+              <li className="category-item">Music</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Sport'>
+              <li className="category-item">Sport</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Cinema'>
+              <li className="category-item">Cinema</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Education'>
+              <li className="category-item">Education</li>
+            </Link>
+            <Link className='cat-link category-item' to='/?cat=Fashion'>
+              <li className="category-item">Fashion</li>
+            </Link>
+
+            <li className="category-item"></li>
+            <li className="category-item"></li>
+            <li className="category-item"></li>
+            <li className="category-item"></li>
+            <li className="category-item"></li>
+            <li className="category-item"></li>
+            <li className="category-item"></li>
           </ul>
         </div>
       </div>
